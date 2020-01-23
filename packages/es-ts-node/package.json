@@ -2,6 +2,14 @@
   "name": "es-ts-node",
   "version": "1.0.0",
   "description": "run esm + ts-node",
+  "homepage": "https://github.com/bluelovers/ws-esm-ts-node/tree/master/packages/es-ts-node#readme",
+  "bugs": {
+    "url": "https://github.com/bluelovers/ws-esm-ts-node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluelovers/ws-esm-ts-node.git"
+  },
   "license": "ISC",
   "author": "",
   "files": [
@@ -26,7 +34,7 @@
     "tsc:esm": "tsc -p tsconfig.esm.json"
   },
   "peerDependencies": {
-    "ts-node": "^8.6.2",
-    "esm": "^3.2.25"
+    "esm": "^3.2.25",
+    "ts-node": "^8.6.2"
   }
 }

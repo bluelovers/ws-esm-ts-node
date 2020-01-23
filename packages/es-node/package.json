@@ -2,6 +2,14 @@
   "name": "es-node",
   "version": "1.0.0",
   "description": "run esm",
+  "homepage": "https://github.com/bluelovers/ws-esm-ts-node/tree/master/packages/es-node#readme",
+  "bugs": {
+    "url": "https://github.com/bluelovers/ws-esm-ts-node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluelovers/ws-esm-ts-node.git"
+  },
   "license": "ISC",
   "author": "",
   "files": [
@@ -28,18 +36,16 @@
     "tsc:default": "tsc -p tsconfig.json",
     "tsc:esm": "tsc -p tsconfig.esm.json"
   },
-  "dependencies": {
-
-  },
-  "peerDependencies": {
-    "esm": "^3.2.25"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "fs-extra": "^8.1.0",
     "@bluelovers/tsconfig": "^1.0.15",
     "@types/esm": "^3.2.0",
     "@types/fs-extra": "^8.0.1",
     "@yarn-tool/find-root": "^1.0.2",
+    "esm": "^3.2.25",
+    "fs-extra": "^8.1.0"
+  },
+  "peerDependencies": {
     "esm": "^3.2.25"
   }
 }
