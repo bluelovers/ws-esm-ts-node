@@ -1,6 +1,6 @@
 {
   "name": "es-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "run esm",
   "homepage": "https://github.com/bluelovers/ws-esm-ts-node/tree/master/packages/es-node#readme",
   "bugs": {
@@ -36,7 +36,6 @@
     "tsc:default": "tsc -p tsconfig.json",
     "tsc:esm": "tsc -p tsconfig.esm.json"
   },
-  "dependencies": {},
   "devDependencies": {
     "@bluelovers/tsconfig": "^1.0.15",
     "@types/esm": "^3.2.0",
