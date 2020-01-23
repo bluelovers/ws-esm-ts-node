@@ -1,6 +1,6 @@
 {
   "name": "esm-ts-node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "run esm + ts-node",
   "homepage": "https://github.com/bluelovers/ws-esm-ts-node/tree/master/packages/es-ts-node#readme",
   "bugs": {
