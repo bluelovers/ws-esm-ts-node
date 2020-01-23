@@ -1,5 +1,5 @@
 {
-  "name": "es-ts-node",
+  "name": "esm-ts-node",
   "version": "1.0.1",
   "description": "run esm + ts-node",
   "homepage": "https://github.com/bluelovers/ws-esm-ts-node/tree/master/packages/es-ts-node#readme",
@@ -17,7 +17,8 @@
   ],
   "main": "bin/index.js",
   "bin": {
-    "es-ts-node": "bin/index.js"
+    "es-ts-node": "bin/index.js",
+    "esm-ts-node": "bin/index.js"
   },
   "scripts": {
     "coverage": "npx nyc yarn run test",
@@ -36,5 +37,6 @@
   "peerDependencies": {
     "esm": "^3.2.25",
     "ts-node": "^8.6.2"
-  }
+  },
+  "gitHead": "2b2df43fd4541f044bbdcc826f5101d8463ef86c"
 }

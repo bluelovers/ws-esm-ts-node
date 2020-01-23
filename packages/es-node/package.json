@@ -1,5 +1,5 @@
 {
-  "name": "es-node",
+  "name": "esm-node",
   "version": "1.0.1",
   "description": "run esm",
   "homepage": "https://github.com/bluelovers/ws-esm-ts-node/tree/master/packages/es-node#readme",
@@ -17,7 +17,8 @@
   ],
   "main": "bin/index.js",
   "bin": {
-    "es-node": "bin/index.js"
+    "es-node": "bin/index.js",
+    "esm-node": "bin/index.js"
   },
   "directories": {
     "test": "test"

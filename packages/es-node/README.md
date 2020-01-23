@@ -5,9 +5,9 @@
 ## install
 
 ```bash
-npm install -g es-node esm
+npm install -g esm-node esm
 ```
 
 ```
-npx es-node xxxx.js
+npx esm-node xxxx.js
 ```
