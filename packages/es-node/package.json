@@ -14,7 +14,7 @@
   "author": "",
   "files": [
     "bin/index.js",
-    "dist/index.js"
+    "dist/bin.js"
   ],
   "keywords": [
     "typescript",
