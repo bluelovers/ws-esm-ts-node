@@ -13,7 +13,8 @@
   "license": "ISC",
   "author": "",
   "files": [
-    "bin/index.js"
+    "bin/index.js",
+    "dist/index.js"
   ],
   "main": "bin/index.js",
   "bin": {
