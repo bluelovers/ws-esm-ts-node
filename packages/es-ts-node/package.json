@@ -20,6 +20,21 @@
     "es-ts-node": "bin/index.js",
     "esm-ts-node": "bin/index.js"
   },
+  "keywords": [
+    "typescript",
+    "node",
+    "runtime",
+    "environment",
+    "ts",
+    "compiler",
+    "commonjs",
+    "ecmascript",
+    "export",
+    "import",
+    "modules",
+    "node",
+    "require"
+  ],
   "scripts": {
     "coverage": "npx nyc yarn run test",
     "lint": "npx eslint **/*.ts",
@@ -27,7 +42,7 @@
     "npm:publish": "npm publish",
     "postpublish_": "git commit -m \"publish new version\" .",
     "prepublish:lockfile": "npx sync-lockfile .",
-    "prepublishOnly_": "yarn run ncu && yarn run sort-package-json && yarn run test",
+    "prepublishOnly": "yarn run ncu && yarn run sort-package-json",
     "sort-package-json": "npx yarn-tool sort",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:mocha": "npx mocha --require ts-node/register \"!(node_modules)/**/*.{test,spec}.{ts,tsx}\"",

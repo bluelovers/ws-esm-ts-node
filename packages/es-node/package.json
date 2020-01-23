@@ -15,6 +15,21 @@
   "files": [
     "bin/index.js"
   ],
+  "keywords": [
+    "typescript",
+    "node",
+    "runtime",
+    "environment",
+    "ts",
+    "compiler",
+    "commonjs",
+    "ecmascript",
+    "export",
+    "import",
+    "modules",
+    "node",
+    "require"
+  ],
   "main": "bin/index.js",
   "bin": {
     "es-node": "bin/index.js",
@@ -30,7 +45,7 @@
     "npm:publish": "npm publish",
     "postpublish_": "git commit -m \"publish new version\" .",
     "prepublish:lockfile": "npx sync-lockfile .",
-    "prepublishOnly_": "yarn run ncu && yarn run sort-package-json && yarn run test",
+    "prepublishOnly": "yarn run ncu && yarn run sort-package-json",
     "sort-package-json": "npx yarn-tool sort",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:mocha": "npx mocha --require ts-node/register \"!(node_modules)/**/*.{test,spec}.{ts,tsx}\"",
