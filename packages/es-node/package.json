@@ -1,6 +1,6 @@
 {
   "name": "esm-node",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "run esm",
   "keywords": [
     "typescript",
@@ -43,7 +43,6 @@
     "preversion": "yarn run test",
     "prepublishOnly": "echo prepublishOnly"
   },
-  "devDependencies": {},
   "peerDependencies": {
     "esm": "^3.2.25"
   }
