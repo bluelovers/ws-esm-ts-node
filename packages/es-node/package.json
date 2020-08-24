@@ -2,20 +2,6 @@
   "name": "esm-node",
   "version": "1.0.5",
   "description": "run esm",
-  "homepage": "https://github.com/bluelovers/ws-esm-ts-node/tree/master/packages/es-node#readme",
-  "bugs": {
-    "url": "https://github.com/bluelovers/ws-esm-ts-node/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bluelovers/ws-esm-ts-node.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "files": [
-    "bin/index.js",
-    "dist/bin.js"
-  ],
   "keywords": [
     "typescript",
     "node",
@@ -28,9 +14,18 @@
     "export",
     "import",
     "modules",
-    "node",
     "require"
   ],
+  "homepage": "https://github.com/bluelovers/ws-esm-ts-node/tree/master/packages/es-node#readme",
+  "bugs": {
+    "url": "https://github.com/bluelovers/ws-esm-ts-node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluelovers/ws-esm-ts-node.git"
+  },
+  "license": "ISC",
+  "author": "",
   "main": "bin/index.js",
   "bin": {
     "es-node": "bin/index.js",
@@ -39,28 +34,16 @@
   "directories": {
     "test": "test"
   },
+  "files": [
+    "bin/index.js",
+    "dist/bin.js"
+  ],
   "scripts": {
-    "coverage": "npx nyc yarn run test",
-    "lint": "npx eslint **/*.ts",
-    "ncu": "npx yarn-tool ncu -u",
-    "npm:publish": "npm publish",
-    "postpublish_": "git commit -m \"publish new version\" .",
-    "prepublish:lockfile": "npx sync-lockfile .",
-    "prepublishOnly": "yarn run ncu && yarn run sort-package-json",
-    "sort-package-json": "npx yarn-tool sort",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:mocha": "npx mocha --require ts-node/register \"!(node_modules)/**/*.{test,spec}.{ts,tsx}\"",
-    "tsc:default": "tsc -p tsconfig.json",
-    "tsc:esm": "tsc -p tsconfig.esm.json"
+    "test": "echo \"Error: no test specified\"",
+    "preversion": "yarn run test",
+    "prepublishOnly": "echo prepublishOnly"
   },
-  "devDependencies": {
-    "@bluelovers/tsconfig": "^1.0.15",
-    "@types/esm": "^3.2.0",
-    "@types/fs-extra": "^8.0.1",
-    "@yarn-tool/find-root": "^1.0.2",
-    "esm": "^3.2.25",
-    "fs-extra": "^8.1.0"
-  },
+  "devDependencies": {},
   "peerDependencies": {
     "esm": "^3.2.25"
   }

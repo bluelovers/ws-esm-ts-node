@@ -6,19 +6,30 @@
     "packages/*"
   ],
   "scripts": {
-    "lerna:publish": "lerna publish",
-    "lerna:publish:yes": "lerna publish --yes --cd-version patch",
-    "prepublish:lockfile": "npx sync-lockfile .",
-    "ncu": "npx yarn-tool ncu -u",
-    "sort-package-json": "npx sort-package-json ./package.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lerna:publish": "yarn run prepublishOnly:root && lerna publish && yarn run postpublishOnly",
+    "lerna:publish:yes": "yarn run prepublishOnly:root && lerna publish --yes --bump patch && yarn run postpublishOnly",
+    "prepublishOnly:check-bin": "ynpx --quiet @yarn-tool/check-pkg-bin",
+    "prepublishOnly:root": "yarn run prepublishOnly:check-bin",
+    "postpublishOnly": "echo postpublishOnly",
+    "ncu": "yarn run ncu:root && yarn run ncu:ws",
+    "ncu:root": "yarn-tool ncu -u",
+    "ncu:ws": "yarn-tool ws exec yarn-tool ncu -- -u",
+    "sort-package-json": "yarn run sort-package-json:root && yarn run sort-package-json:ws",
+    "sort-package-json:root": "yarn-tool sort",
+    "sort-package-json:ws": "yarn-tool ws exec yarn-tool sort"
   },
+  "resolutions": {},
   "devDependencies": {
+    "@bluelovers/tsconfig": "latest",
+    "@types/esm": "^3.2.0",
+    "@types/fs-extra": "^9.0.1",
     "@types/node": "*",
-    "@bluelovers/tsconfig": "latest"
+    "@yarn-tool/find-root": "^1.0.35",
+    "esm": "^3.2.25",
+    "fs-extra": "^9.0.1"
   },
   "peerDependencies": {
     "lerna": "^3"
-  },
-  "resolutions": {}
+  }
 }
